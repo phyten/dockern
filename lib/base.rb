@@ -21,6 +21,13 @@ module Dockern
       # gv.add_edges( s, p )
       # gv.add_nodes( "s", **Dockern::Container.style)
     end
+    def route(from_to)
+      from_to, _ = *from_to
+      from, to = from_to
+      add(from)
+      add(to)
+      @gv.add_edges(from, to)
+    end
     def output(arg)
       @gv.output(**arg)
     end

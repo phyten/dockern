@@ -1,8 +1,10 @@
 require_relative "lib/base"
 
 stage = Dockern::Stage.new
-stage.add(Dockern::Container.new("container_1"))
-stage.add(Dockern::Container.new("container_2"))
+sinatra = Dockern::Container.new("sinatra")
+mysql = Dockern::Container.new("mysql")
+
+stage.route sinatra => mysql
 stage.output(:png => "sample1.png")
 
 
