@@ -1,0 +1,29 @@
+version: '3.5'
+
+services:
+  base: &app_base
+    build: .
+    stdin_open: true
+    environment:
+      BUNDLE_APP_CONFIG: ./.bundle
+      MYSQL_ROOT_PASSWORD: Jj42363636
+    volumes:
+      - .:/app
+      - bundle:/app/vendor/bundle
+
+  app:
+    <<: *app_base
+
+  graphviz:
+    image: graphviz/graphviz:ubuntu-20.04
+
+networks:
+  gviz:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.239.0/16
+          gateway: 172.16.239.1
+
+volumes:
+  bundle:

@@ -1,0 +1,142 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionview (6.0.3.4)
+      activesupport (= 6.0.3.4)
+      builder (~> 3.1)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    activemodel (6.0.3.4)
+      activesupport (= 6.0.3.4)
+    activerecord (6.0.3.4)
+      activemodel (= 6.0.3.4)
+      activesupport (= 6.0.3.4)
+    activerecord-like (2.2)
+      activerecord (>= 5.0.0)
+    activesupport (6.0.3.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.2, >= 2.2.2)
+    bcrypt (3.1.16)
+    builder (3.2.4)
+    byebug (11.1.3)
+    coderay (1.1.3)
+    concurrent-ruby (1.1.7)
+    crass (1.0.6)
+    diffy (3.4.0)
+    erubi (1.9.0)
+    faraday (1.1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords
+    i18n (1.8.5)
+      concurrent-ruby (~> 1.0)
+    json (2.3.1)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
+    kaminari-sinatra (1.0.1)
+      actionview
+      kaminari-core (~> 1.0)
+      padrino-helpers
+      sinatra
+    loofah (2.7.0)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
+    method_source (1.0.0)
+    mini_portile2 (2.4.0)
+    minitest (5.14.2)
+    multi_json (1.15.0)
+    multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    mysql2 (0.5.3)
+    nio4r (2.5.4)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
+    padrino-helpers (0.15.0)
+      i18n (>= 0.6.7, < 2)
+      padrino-support (= 0.15.0)
+      tilt (>= 1.4.1, < 3)
+    padrino-support (0.15.0)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.9.0)
+      byebug (~> 11.0)
+      pry (~> 0.13.0)
+    puma (5.0.4)
+      nio4r (~> 2.0)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.3.0)
+      loofah (~> 2.3)
+    rake (13.0.1)
+    rexml (3.2.4)
+    ridgepole (0.8.10)
+      activerecord (>= 5.0.1, < 6.1)
+      diffy
+    ruby-graphviz (1.2.5)
+      rexml
+    ruby2_keywords (0.0.2)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-contrib (2.1.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
+      tilt (~> 2.0)
+    thread_safe (0.3.6)
+    tilt (2.0.10)
+    tzinfo (1.2.8)
+      thread_safe (~> 0.1)
+    zeitwerk (2.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  activerecord-like
+  activesupport
+  bcrypt
+  faraday
+  json
+  kaminari
+  kaminari-sinatra
+  mysql2
+  nokogiri
+  padrino-helpers
+  pry
+  pry-byebug
+  puma
+  rake
+  ridgepole
+  ruby-graphviz
+  sinatra
+  sinatra-contrib
+
+RUBY VERSION
+   ruby 2.6.6p146
+
+BUNDLED WITH
+   1.17.2

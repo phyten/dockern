@@ -1,0 +1,34 @@
+version: '4'
+
+environment:
+  RAILS_ENV: development
+  DIP_ENV: development
+
+compose:
+  files:
+    - docker-compose.yml
+
+interaction:
+  sh:
+    description: Open the app container bash shell
+    service: app
+    command: /bin/bash
+    compose_run_options: [no-deps]
+
+  pry:
+    description: pry
+    service: app
+    command: bundle exec pry -r "./lib/base"
+    compose_run_options: [no-deps]
+
+  bundle:
+    description: Run bundler command
+    service: app
+    command: bundle
+    compose_run_options: [no-deps]
+
+  ruby:
+    description: app
+    service: app
+    command: bundle exec ruby
+    compose_run_options: [no-deps]
